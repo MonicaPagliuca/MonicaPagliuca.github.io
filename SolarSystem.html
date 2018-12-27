@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Solar System</title>
+<!-- link to font awesome icons so we can use them on our page -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: 'Roboto', sans-serif;
+    }
+    body,
+    h5,
+    h6 {
+        font-family: 'Roboto', sans-serif;
+    }
+    body,
+    link {
+        color
+    }
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+    .w3-sidebar {
+        width: 120px;
+        background: #222;
+        color: white;
+    }
+    .navbar a {
+        color: white;
+        font-size: 1.2em;
+        text-decoration: none;
+        display: block;
+        background-color: gray;
+        padding: 5px;
+        margin: 5px;
+        text-align: center;
+    }
+    #main {
+        margin-left: 120px;
+    }
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        color: #878787;
+        margin: 0;
+        font-family: sans-serif;
+        text-align: center;
+        background-color: black;
+    }
+    img {
+        max-width: 100%;
+    }
+    a {
+        text-decoration: none;
+    }
+    .main-header {
+        height: 400px;
+        background: url("Images/winter.jpg") no-repeat center;
+        background-size: cover;
+    }
+    .main-header-title {
+        text-align: left;
+        font-size: 3.5em;
+        color: #f7f8f9;
+        text-transform: uppercase;
+        font-weight: normal;
+        padding-left: 75px;
+        text-shadow: 0.5px 1px grey;
+        padding-top: 5px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .main-header-intro {
+        line-height: 1.5em;
+        width: 50%;
+        margin: auto;
+        padding: 100px;
+        color: white;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .intro {
+        width: 60%;
+        margin: auto;
+    }
+    .button {
+        display: block;
+        border-radius: 1px;
+        margin: auto;
+        box-shadow: 3px 2px 5px darkgray;
+        width: 180px;
+        background: lightgray;
+        color: black;
+        padding: 14px;
+        font-size: 18px;
+    }
+    .box {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .card {
+        width: 100%;
+        padding: 20px;
+        text-align: left;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 20px;
+        background: #f0f5f5;
+        box-shadow: 10px 10px 20px gray;
+    }
+    .footer {
+        height: 40px;
+        background: #f0f5f5;
+        padding: 5px;
+    }
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0;
+        }
+        #earthimg {
+            width: 100%;
+        }
+        .box {
+            display: block;
+        }
+        .main-header-intro {
+            line-height: 1.5em;
+            width: 100%;
+            margin: auto;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        .main-header-title {
+            text-align: center;
+            font-size: 2.5em;
+            color: #f7f8f9;
+            text-transform: uppercase;
+            font-weight: normal;
+            text-shadow: 0.5px 1px grey;
+            padding-top: 5px;
+            padding-left: 0;
+        }
+    }
+</style>
+
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-medium w3-hide-small w3-center">
+
+    <img src="Images/astronaut.jpg" alt="AstronautPic" style="width:100%">
+
+    <a href="Index.html" class="w3-bar-item w3-button w3-border w3-border-gray w3-hover-border-white w3-padding-large w3-hover-black">
+        <i class="fa fa-home w3-xxlarge"></i>
+        <p>Home</p>
+    </a>
+
+    <a href="Mars.html" class="w3-bar-item w3-button w3-border w3-border-gray w3-hover-border-white w3-padding-large w3-hover-black">
+        <i class="fa fa-mars w3-xxlarge"></i>
+        <p>Mars</p>
+    </a>
+
+    <a href="SolarSystem.html" class="w3-bar-item w3-button w3-border w3-border-gray w3-hover-border-white w3-padding-large w3-hover-black">
+        <i class="fa fa-star-o w3-xxlarge"></i>
+        <p>Solar System</p>
+    </a>
+
+    <a href="MilkyWay.html" class="w3-bar-item w3-button w3-border w3-border-gray w3-hover-border-white w3-padding-large w3-hover-black">
+        <i class="fa fa-space-shuttle w3-xxlarge"></i>
+        <p>Milky Way</p>
+    </a>
+
+    <a href="TheMoon.html" class="w3-bar-item w3-button w3-border w3-border-gray w3-hover-border-white w3-padding-large w3-hover-black">
+        <i class="fa fa-moon-o w3-xxlarge"></i>
+        <p>The Moon</p>
+    </a>
+
+    <a href="Earth.html" class="w3-bar-item w3-button w3-border w3-border-gray w3-hover-border-white w3-padding-large w3-hover-black">
+        <i class="fa fa-globe w3-xxlarge"></i>
+        <p>Earth</p>
+    </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="navbar w3-hide-large w3-hide-medium">
+    <a href="Index.html">Home</a>
+    <a href="Mars.html">Mars</a>
+    <a href="SolarSystem.html">Solar System</a>
+    <a href="MilkyWay.html">Milky Way</a>
+    <a href="TheMoon.html">The Moon</a>
+    <a href="Earth.html">Earth</a>
+</div>
+
+
+
+
+<!-- Header/Home -->
+<div id="main">
+    <div class="main-header">
+        <h1 class="main-header-title">Our Solar System</h1>
+        <div class="main-header-intro">
+            Located within the vast Milky Way Galaxy
+        </div>
+    </div>
+
+    <h2>Understanding our Solar System</h2>
+    <div class="intro">
+        <p> Our Solar System consists of the Sun which is our star, and everything that orbits around it - 8 planets and their natural satellites (such as our moon), dwarf planets and their satellites, as well as asteroids, comets and countless particles of smaller debris.
+        </p>
+        <a href="https://www.nasa.gov/topics/solarsystem/index.html" class="button">Learn More</a>
+    </div>
+
+    <div class="box">
+        <div class="card">
+            <img src="Images/sun.jpg" alt="Sun">
+            <h3>The Sun</h3>
+            <p>
+                The Sun is considered to be the heart of our Solar System. It is a burning hot star and without it, there would be no life on Earth.
+            </p>
+            <ul>
+                <li>Average diameter: 864,000 miles</li>
+                <li>Rotation period at equator: About 27 days</li>
+                <li>Surface temperature: 10,000 degrees Fahrenheit</li>
+            </ul>
+        </div>
+        <!-- End of class .card -->
+
+        <div class="card">
+            <img src="Images/darkmatter.jpg" alt="Matter">
+            <h3>Dark Matter</h3>
+            <p>
+                Dark Matter is "invisible" matter that we cannot detect.
+            </p>
+            <ul>
+                <li>It might not be made up of the matter we are familiar with</li>
+                <li>One way scientists indirectly study dark matter is by using gravitational lensing</li>
+                <li>Scientists at NASA think they have a direct way to detect dark matter using the Fermi Gamma-Ray Space Telescope</li>
+            </ul>
+        </div>
+        <!-- End of class .card -->
+
+        <div class="card">
+            <img src="Images/blackhole.jpg" alt="BlackHole">
+            <h3>Black Holes</h3>
+            <p>
+                A black hole is a place in space where gravity pulls so much that even light can not get out.
+            </p>
+            <ul>
+                <li>Black holes can be big or small</li>
+                <li>Scientists think the smallest black holes formed when the universe began</li>
+                <li>NASA is using satellites and telescopes that are traveling in space to learn more about black holes</li>
+            </ul>
+        </div>
+
+
+    </div>
+    <!-- End of class .box -->
+</div>
+
+<div class="w3-panel" id="Credit2">
+    <br>For where I got my information, please <a href="https://solarsystem.nasa.gov" class="w3-text-blue">click here</a>
+</div>
+
+</body>
+
+</html>

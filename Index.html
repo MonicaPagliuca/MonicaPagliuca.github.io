@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Space News</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: 'Roboto', sans-serif;
+    }
+    body,
+    h5,
+    h6 {
+        font-family: 'Roboto', sans-serif;
+    }
+    body,
+    link {
+        color
+    }
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+    /* Set the width of the sidebar to 120px */
+    
+    .w3-sidebar {
+        width: 120px;
+        background: #222;
+    }
+    .navbar a {
+        color: white;
+        font-size: 1.2em;
+        text-decoration: none;
+        display: block;
+        background-color: gray;
+        padding: 5px;
+        margin: 5px;
+        text-align: center;
+    }
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    /*by karen: need to remove the comma after #Again1*/
+    /*#Home, #News1, #myNavbar, #News2, #News3, #Credit0, #Credit, #Again1  {
+        margin-left: 120px;
+    }*/
+    /*#SpaceNews {
+        margin-left: 200px;
+    }*/
+    
+    #main {
+        margin-left: 120px;
+    }
+    /* Remove margins from "page content" on small screens */
+    /*by karen: need to remove the comma after #Again1*/
+    
+    @media only screen and (max-width: 600px) {
+        /*#Home, #SpaceNews, #News1, #myNavbar, #News2, #News3, #Credit0, #Credit, #Again1 {
+            margin-left: 0;
+        }*/
+        
+        #main {
+            margin-left: 0;
+        }
+        #earthimg {
+            width: 100%;
+        }
+    }
+    #Credit0 {
+        background-image: url("Images/starbackground.jpg");
+    }
+</style>
+
+<body class="w3-black">
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-medium w3-hide-small w3-center">
+        <!-- Astronaut image in top left corner -->
+        <!-- REQUIRED 1 ADDED W3-CSS BORDER -->
+        <!-- REQUIRED 2 ADDED W3-CSS BORDER COLOR -->
+        <!-- REQUIRED ADDED W3-CSS BORDER COLOR HOVER -->
+        <!-- ADDED SEVERAL OTHER W3-CSS'S THROUGHOUT -->
+        <img src="Images/astronaut.jpg" alt="AstronautPic" style="width:100%">
+
+        <a href="Index.html" class="w3-bar-item w3-button w3-border w3-border-gray w3-hover-border-white w3-padding-large w3-hover-black">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>Home</p>
+        </a>
+
+        <a href="Mars.html" class="w3-bar-item w3-button w3-border w3-border-gray w3-hover-border-white w3-padding-large w3-hover-black">
+            <i class="fa fa-mars w3-xxlarge"></i>
+            <p>Mars</p>
+        </a>
+
+        <a href="SolarSystem.html" class="w3-bar-item w3-button w3-border w3-border-gray w3-hover-border-white w3-padding-large w3-hover-black">
+            <i class="fa fa-star-o w3-xxlarge"></i>
+            <p>Solar System</p>
+        </a>
+
+        <a href="MilkyWay.html" class="w3-bar-item w3-button w3-border w3-border-gray w3-hover-border-white w3-padding-large w3-hover-black">
+            <i class="fa fa-space-shuttle w3-xxlarge"></i>
+            <p>Milky Way</p>
+        </a>
+
+        <a href="TheMoon.html" class="w3-bar-item w3-button w3-border w3-border-gray w3-hover-border-white w3-padding-large w3-hover-black">
+            <i class="fa fa-moon-o w3-xxlarge"></i>
+            <p>The Moon</p>
+        </a>
+
+        <a href="Earth.html" class="w3-bar-item w3-button w3-border w3-border-gray w3-hover-border-white w3-padding-large w3-hover-black">
+            <i class="fa fa-globe w3-xxlarge"></i>
+            <p>Earth</p>
+        </a>
+    </nav>
+
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="navbar w3-hide-large w3-hide-medium">
+        <a href="Index.html">Home</a>
+        <a href="Mars.html">Mars</a>
+        <a href="SolarSystem.html">Solar System</a>
+        <a href="MilkyWay.html">Milky Way</a>
+        <a href="TheMoon.html">The Moon</a>
+        <a href="Earth.html">Earth</a>
+    </div>
+
+    <!-- Header/Home -->
+    <div id="main">
+        <header class="w3-container w3-center w3-black w3-text-white w3-xlarge w3-padding-large" id="Home">
+            <h1 class="w3-xxxlarge"><span class="w3-text-white">Space Exploration</span>
+            </h1>
+            <p>An ongoing study of the celestial structures in our Universe -
+                <br> with continuous advancement in technology, we will only learn more</p>
+            <!--         <div id="earthimage"  width="60%"> -->
+            <!-- by karen: added fading animation to look cool -->
+            <img src="Images/earthcopy.jpg" alt="EarthPic" class="w3-animate-fading" id="earthimg">
+            <!-- </div> -->
+        </header>
+
+
+        <!-- Introduction Section -->
+        <div class="w3-container w3-center w3-content" id="SpaceNews">
+            <h2 class="w3-wide w3-xxlarge w3-text-blue">Recent Space News</h2>
+            <p class="w3-justify w3-text-white"> Every day cosmologists, astronomers, astrophysicists, and others alike are working to help us gain more knowledge in the field of astronomy. Staying up to date on discoveries in space as well as new technological advancements, is critical in our understanding of the universe.</p>
+            <br>
+            <p class="w3-opacity w3-large"><i> Here are some of the latest news updates about what's happening space!</i>
+            </p>
+        </div>
+
+
+        <div class="w3-container w3-content w3-padding-64" style="max-width:1000px">
+            <div class="w3-row-padding">
+                <div class="w3-third">
+                    <img src="Images/starbirth2.jpg" alt="#" style="width:100%" class="w3-hover-opacity w3-grayscale-min">
+                    <div class="w3-container w3-white">
+                        <p class="w3-text-blue"><b>Dramatic stellar fireworks of star birth</b>
+                        </p>
+                        <p class="w3-opacity">Fri 7 April 2017</p>
+                        <p class="w3-justify">Stellar explosions are most often associated with supernovae, the spectacular deaths of stars. But new observationsts into explosions at the other end of the stellar life cycle, star birth. Astronomers captured these dramatic images as they explored the firework-like debris from the birth of a group of massive stars, demonstrating that star formation can be a violent and explosive process too.</p>
+                        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwj75bDd5KzTAhVL34MKHQk7D60QFgglMAA&url=https%3A%2F%2Fwww.sciencedaily.com%2Freleases%2F2017%2F04%2F170407132753.htm&usg=AFQjCNGuE0gURyOS7oyH-03c9QRh00vpZA&sig2=wScpZcfiYs8zCNplQm-I0g" class="w3-left w3-text-blue">Read Full Article</a>
+                    </div>
+                </div>
+                <div class="w3-third">
+                    <img src="Images/pluto.jpg" alt="#" style="width:100%" class="w3-hover-opacity w3-grayscale-min">
+                    <div class="w3-container w3-white">
+                        <p class="w3-text-blue"><b>Meet 'DeeDee,' a distant, dim member of our solar system</b>
+                        </p>
+                        <p class="w3-opacity">Wed 12 April 2017</p>
+                        <p class="w3-justify">Using the Atacama Large Millimeter/submillimeter Array (ALMA), astronomers have revealed extraordinary details about a recently discovered far-flung member of our solar system, the planetary body 2014 UZ224, more informally known as DeeDee.</p>
+                        <br>
+                        <br>
+                        <br>
+                        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwid-uvw5KzTAhXq44MKHcnnDOAQFgglMAA&url=https%3A%2F%2Fwww.sciencedaily.com%2Freleases%2F2017%2F04%2F170412115749.htm&usg=AFQjCNEeLGXdVG-8tN_wCzQ7p9KZ3vAZoQ&sig2=57WQ1bx9cKm8evviL0VqVQ" class="w3-left w3-text-blue">Read Full Article</a>
+                    </div>
+                </div>
+                <div class="w3-third">
+                    <img src="Images/maven2.png" alt="#" style="width:100%" class="w3-hover-opacity w3-grayscale-max">
+                    <div class="w3-container w3-white">
+                        <p class="w3-text-blue"><b>NASA's MAVEN reveals Mars has metal in its atmosphere</b>
+                        </p>
+                        <p class="w3-opacity">Mon 10 April 2017</p>
+                        <p class="w3-justify">Mars has electrically charged metal atoms (ions) high in its atmosphere, according to new results. The metal ions can reveal previously invisible activity in the mysterious electrically charged upper atmosphere (ionosphere) of Mars.
+                        </p>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <a href="https://www.sciencedaily.com/releases/2017/04/170410154724.htm" class="w3-left w3-text-blue">Read Full Article</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-panel w3-border w3-border-blue w3-black w3-round-large" id="Credit0">
+                <br>NASA has tons of great image stills and even high-def videos to look through if you are interested. They are my favorite pictures to browse through because of how realistic and detailed they are. <a href="https://www.nasa.gov/" class="w3-text-blue">Click here</a> to see!
+                <br>
+                <br>
+            </div>
+
+            <hr style="width:930px" class="w3-opacity" id="Credit">
+            <h5 class="w3-center w3-text-gray w3-small"> Image Credit: NASA Earth Observatory image by Joshua Stevens, using Suomi NPP VIIRS data from Miguel Román, NASA's Goddard Space Flight Center</h5>
+        </div>
+    </div>
+</body>
+
+</html>

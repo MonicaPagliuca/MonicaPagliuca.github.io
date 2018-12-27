@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Earth</title>
+
+<meta name="viewport" content="initial-scale=1">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: 'Roboto', sans-serif;
+    }
+    body,
+    h5,
+    h6 {
+        font-family: 'Roboto', sans-serif;
+    }
+    body,
+    link {
+        color
+    }
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+    .w3-sidebar {
+        width: 120px;
+        background: #222;
+        color: white;
+    }
+    .navbar a {
+        color: white;
+        font-size: 1.2em;
+        text-decoration: none;
+        display: block;
+        background-color: gray;
+        padding: 5px;
+        margin: 5px;
+        text-align: center;
+    }
+    #main {
+        margin-left: 120px;
+    }
+    .content {
+        max-width: 820px;
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+    }
+    .col-quarter {
+        line-height: 1.2em;
+        padding: 20px;
+        width: 30%;
+    }
+    .main-header {
+        height: 400px;
+        background: url("Images/earthfromspace.jpg") no-repeat center;
+        background-size: cover;
+    }
+    .main-header-title {
+        text-align: left;
+        font-size: 3.5em;
+        color: #f7f8f9;
+        text-transform: uppercase;
+        font-weight: normal;
+        padding-left: 75px;
+        text-shadow: 0.5px 1px grey;
+        padding-top: 5px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .main-header-intro {
+        line-height: 1.5em;
+        width: 50%;
+        margin: auto;
+        padding: 60px;
+        color: white;
+        font-size: 1.5em;
+    }
+    .box {
+        display: flex;
+        width: 80%;
+        margin: auto;
+    }
+    .footer {
+        height: 40px;
+        background: #f0f5f5;
+        padding: 5px;
+    }
+    p {
+        text-align: justify;
+    }
+    h3 {
+        font-size: 2em;
+        line-height: 1em;
+        color: white;
+    }
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0;
+        }
+        #earthimg {
+            width: 100%;
+        }
+        .box {
+            display: block;
+        }
+        .main-header-intro {
+            line-height: 1.5em;
+            width: 100%;
+            margin: auto;
+            padding: 20px;
+            /*padding: 100px;*/
+            
+            color: white;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        .main-header-title {
+            text-align: center;
+            font-size: 2.5em;
+            color: #f7f8f9;
+            text-transform: uppercase;
+            font-weight: normal;
+            text-shadow: 0.5px 1px grey;
+            padding-top: 5px;
+            padding-left: 0;
+        }
+        .content {
+            display: block;
+            margin: auto;
+        }
+        .col-quarter {
+            line-height: 1.2em;
+            padding: 20px;
+            width: 100%;
+        }
+        p {
+            text-align: center;
+            margin: auto;
+            padding: 20px;
+        }
+        h3 {
+            text-align: center;
+            /*margin: 5px;*/
+            
+            padding: 0;
+        }
+    }
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        color: #878787;
+        margin: 0;
+        font-family: sans-serif;
+        text-align: center;
+        background-color: black;
+    }
+    img {
+        max-width: 100%;
+    }
+    a {
+        text-decoration: none;
+    }
+</style>
+
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-medium w3-hide-small w3-center">
+    <img src="Images/astronaut.jpg" alt="AstronautPic" style="width:100%">
+
+    <a href="Index.html" class="w3-bar-item w3-button w3-border w3-border-gray w3-hover-border-white w3-padding-large w3-hover-black">
+        <i class="fa fa-home w3-xxlarge"></i>
+        <p>Home</p>
+    </a>
+
+    <a href="Mars.html" class="w3-bar-item w3-button w3-border w3-border-gray w3-hover-border-white w3-padding-large w3-hover-black">
+        <i class="fa fa-mars w3-xxlarge"></i>
+        <p>Mars</p>
+    </a>
+
+    <a href="SolarSystem.html" class="w3-bar-item w3-button w3-border w3-border-gray w3-hover-border-white w3-padding-large w3-hover-black">
+        <i class="fa fa-star-o w3-xxlarge"></i>
+        <p>Solar System</p>
+    </a>
+
+    <a href="MilkyWay.html" class="w3-bar-item w3-button w3-border w3-border-gray w3-hover-border-white w3-padding-large w3-hover-black">
+        <i class="fa fa-space-shuttle w3-xxlarge"></i>
+        <p>Milky Way</p>
+    </a>
+
+    <a href="TheMoon.html" class="w3-bar-item w3-button w3-border w3-border-gray w3-hover-border-white w3-padding-large w3-hover-black">
+        <i class="fa fa-moon-o w3-xxlarge"></i>
+        <p>The Moon</p>
+    </a>
+
+    <a href="Earth.html" class="w3-bar-item w3-button w3-border w3-border-gray w3-hover-border-white w3-padding-large w3-hover-black">
+        <i class="fa fa-globe w3-xxlarge"></i>
+        <p>Earth</p>
+    </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="navbar w3-hide-large w3-hide-medium">
+    <a href="Index.html">Home</a>
+    <a href="Mars.html">Mars</a>
+    <a href="SolarSystem.html">Solar System</a>
+    <a href="MilkyWay.html">Milky Way</a>
+    <a href="TheMoon.html">The Moon</a>
+    <a href="Earth.html">Earth</a>
+</div>
+
+
+
+
+
+<!-- Header/Home -->
+<div id="main">
+    <div class="main-header">
+        <h1 class="main-header-title">Our Planet, Earth</h1>
+        <br>
+        <div class="main-header-intro">
+            Earth is the third planet from the Sun, and largest of the terrestrial planets
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="col-quarter">
+            <h3>Orbit and Rotation</h3>
+            <p>Earth is constantly orbiting the Sun. While it does this, it completes one full rotation every 23.9 hours, although it takes 365.25 days to make a full orbit around the Sun. Earth has 4 seasons, all of which occur because of Earth's axis of rotation, which is tilted 23.4 degrees.
+            </p>
+        </div>
+        <div class="col-quarter">
+            <h3>Surface</h3>
+            <p>Earth has volcanoes, valleys, and mountains - similar to Mars and Venus. The Earth's lithosphere is made up of a collection of very large plates that are always in movement. Earth's oceans make up 70% of it's surface, and almost all volcanoes are in the ocean.
+            </p>
+
+        </div>
+        <div class="col-quarter">
+            <h3>Atmosphere</h3>
+            <p>Earth's atmosphere consists of 78% nitrogen, 21% oxygen, and 1% other gases. The atmosphere affects the weather and climate, and without it we would be exposed to the Sun's harmful radiation. It also helps protect us from objects coming from space, such as meteoroids.
+            </p>
+        </div>
+        <div class="col-quarter">
+            <h3>Magnetosphere</h3>
+            <p>Because of our planet's fast paced rotation and molten nickel-iron core, we have what is called a magnetic field. When charged particles from the solar wind get trapped there, they then collide with air molecules above the Earth's magnetic poles. An interesting fact, is that our magnetic field is what makes compass needles point toawrds the North Pole, no matter which way you turn.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="w3-panel" id="Credit2">
+        <br>For where I got my information, please <a href="https://solarsystem.nasa.gov/planets/earth/indepth" class="w3-text-blue">click here</a>
+    </div>
+
+
+</div>
+</body>
+
+</html>

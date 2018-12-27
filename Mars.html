@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Mars</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: 'Roboto', sans-serif;
+    }
+    body,
+    h5,
+    h6 {
+        font-family: 'Roboto', sans-serif;
+    }
+    body,
+    link {
+        color
+    }
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+    /* Set the width of the sidebar to 120px */
+    
+    .w3-sidebar {
+        width: 120px;
+        background: #222;
+    }
+    .navbar a {
+        color: white;
+        font-size: 1.2em;
+        text-decoration: none;
+        display: block;
+        background-color: gray;
+        padding: 5px;
+        margin: 5px;
+        text-align: center;
+    }
+    #main {
+        margin-left: 120px;
+    }
+    th {
+        font-size: 1.3em;
+    }
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0;
+        }
+        #earthimg {
+            width: 100%;
+        }
+        th {
+            font-size: 1em;
+        }
+    }
+</style>
+
+<body class="w3-black">
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-medium w3-hide-small w3-center">
+        <img src="Images/astronaut.jpg" alt="AstronautPic" style="width:100%">
+
+        <a href="Index.html" class="w3-bar-item w3-button w3-border w3-border-gray w3-hover-border-white w3-padding-large w3-hover-black">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>Home</p>
+        </a>
+
+        <a href="Mars.html" class="w3-bar-item w3-button w3-border w3-border-gray w3-hover-border-white w3-padding-large w3-hover-black">
+            <i class="fa fa-mars w3-xxlarge"></i>
+            <p>Mars</p>
+        </a>
+
+        <a href="SolarSystem.html" class="w3-bar-item w3-button w3-border w3-border-gray w3-hover-border-white w3-padding-large w3-hover-black">
+            <i class="fa fa-star-o w3-xxlarge"></i>
+            <p>Solar System</p>
+        </a>
+
+        <a href="MilkyWay.html" class="w3-bar-item w3-button w3-border w3-border-gray w3-hover-border-white w3-padding-large w3-hover-black">
+            <i class="fa fa-space-shuttle w3-xxlarge"></i>
+            <p>Milky Way</p>
+        </a>
+
+        <a href="TheMoon.html" class="w3-bar-item w3-button w3-border w3-border-gray w3-hover-border-white w3-padding-large w3-hover-black">
+            <i class="fa fa-moon-o w3-xxlarge"></i>
+            <p>The Moon</p>
+        </a>
+
+        <a href="Earth.html" class="w3-bar-item w3-button w3-border w3-border-gray w3-hover-border-white w3-padding-large w3-hover-black">
+            <i class="fa fa-globe w3-xxlarge"></i>
+            <p>Earth</p>
+        </a>
+    </nav>
+
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="navbar w3-hide-large w3-hide-medium">
+        <a href="Index.html">Home</a>
+        <a href="Mars.html">Mars</a>
+        <a href="SolarSystem.html">Solar System</a>
+        <a href="MilkyWay.html">Milky Way</a>
+        <a href="TheMoon.html">The Moon</a>
+        <a href="Earth.html">Earth</a>
+    </div>
+
+    <!-- Header/Home -->
+    <div id="main">
+        <header class="w3-container w3-center w3-black w3-text-red w3-xlarge" id="Mars">
+            <h1 class="w3-xxxlarge"><span class="w3-text-red">Mars: The Red Planet </span>
+        </h1>
+            <p>Development in technology is what makes Mars missions possible</p>
+            <!-- <div id="marsimage"  width="60%"> -->
+            <img src="Images/marscopy.jpg" alt="MarsPic">
+            <!-- </div> -->
+        </header>
+
+        <div class="w3-container w3-content w3-justify w3-text-white w3-padding-large" id="SpaceNews">
+
+            <h2 class="w3-text-red">An Introduction on Mars</h2> Mars is fascinating because it has several similarities to Earth, for example the length of an Earth day is (roughly) the same as a day on Mars. An interesting fact about Mars, is the reason it is called "The Red Planet". It is because there are iron minerals in the soil that oxidize (rust) causing the soil and the atmosphere to appear a reddish color. The major significance about Mars though, is it's potential for future life, and what life could have existed there at some point in time.
+            <br>
+            <br>
+            <p class="w3-opacity w3-large w3-center"><i> To view imagery and perform analysis on data from Mars <a href="https://marstrek.jpl.nasa.gov/index.html#v=0.1&x=21.621089989047505&y=-12.128904344931655&z=1&p=IAU2000%3A49900&d=&l=nomenclature_eq%2Cfalse&l=graticule_eq%2Cfalse&l=nomenclature_np%2Cfalse&l=graticule_np%2Cfalse&l=nomenclature_sp%2Cfalse&l=graticule_sp%2Cfalse" class="w3-text-blue">Click here !</a></i>
+            </p>
+        </div>
+
+        <!-- Table -->
+        <div class="w3-container w3-content w3-center w3-text-black w3-padding-large" id="FactsMars">
+            <h2 class="w3-text-red w3-xxlarge">Facts About Mars</h2>
+
+            <div class="w3-container">
+
+                <table class="w3-table-all w3-hoverable w3-centered w3-border w3-border-red w3-topbar w3-bottombar w3-rightbar w3-leftbar">
+                    <thead>
+                        <tr class="w3-red">
+                            <th></th>
+                            <th>Earth</th>
+                            <th>Mars</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <th>Average Distance from Sun</th>
+                        <td>93 million miles</td>
+                        <td>142 million miles</td>
+                    </tr>
+                    <tr>
+                        <th>Diameter</th>
+                        <td>7,926 miles</td>
+                        <td>4,220 miles</td>
+                    </tr>
+                    <tr>
+                        <th>Length of Year</th>
+                        <td>365.25 Days</td>
+                        <td>687 Earth Days</td>
+                    </tr>
+                    <tr>
+                        <th>Gravity</th>
+                        <td>2.66 times that of Mars</td>
+                        <td>0.375 that of Earth</td>
+                    </tr>
+                    <tr>
+                        <th>Temperature</th>
+                        <td>Average 57 degrees F</td>
+                        <td>Average -81 degrees F</td>
+                    </tr>
+                    <tr>
+                        <th>Atmosphere</th>
+                        <td>nitrogen, oxygen, argon, others</td>
+                        <td>mostly carbon dioxide, some water vapor</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="w3-container w3-content w3-center w3-text-gray w3-padding-large" id="MarsPhotos">
+            <h2 class="w3-text-red w3-xxlarge">Photos of Mars</h2>
+
+            <div class="w3-row-padding w3-half">
+                <img src="Images/marsicecap.jpg" alt="ABC" style="width:100%">
+                <img src="Images/marsdunes.jpg" alt="DEF" style="width:100%">
+                <img src="Images/marsancient.jpg" alt="HIJ" style="width:100%">
+                <img src="Images/therover.jpg" alt="KLM" style="width:100%">
+            </div>
+
+            <div class="w3-half">
+                <img src="Images/blackrover.jpg" alt="NOP" style="width:100%">
+                <img src="Images/gullies.jpg" alt="QRS" style="width:100%">
+                <img src="Images/marssummer.jpg" alt="TUV" style="width:100%">
+                <img src="Images/tracegasorbiter.jpg" alt="WXY" style="width:100%">
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="w3-panel" id="Credit2">
+                <br>For where I got my information, please <a href="https://mars.nasa.gov/" class="w3-text-blue">Click here</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
